@@ -1,0 +1,166 @@
+/* Importerar Font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+
+/* Innehållsförteckning
+1. Body
+2. Posts
+3. Buttons
+4. Add post
+*/
+
+/* 1 Body */
+body {
+    overflow-x: hidden;
+    padding: 2rem;
+    margin: 0;
+    text-align: center;
+    background: #1488cc;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #fff;
+    font-family: 'Belanosima', sans-serif;
+}
+
+/* 2 Posts */
+.posts {
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.post {
+    width: calc(15% - 1.3rem);
+    margin-bottom: 2rem;
+    padding: 5rem;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.post h3 {
+    font-family: 'Oswald', sans serifs;
+    font-size: 1.8rem;
+}
+
+.post p {
+    color: #000;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.post h4 {
+    margin-bottom: 2rem;
+    font-family: 'Oswald', sans serifs;
+}
+
+.post h5 {
+    font-family: 'Belanosima', sans-serif;
+}
+
+@media (max-width: 960px) {
+    .post {
+        width: calc(33.33% - 1.6rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .post {
+        width: calc(50% - 1.6rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .post {
+        width: calc(100% - 1.6rem);
+    }
+}
+
+.post-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* 3 Buttons */
+.delete {
+    background: #dc2626;
+    color: #fff;
+    box-shadow: 3px 3px gray;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+}
+
+.delete:hover {
+    transform: translate(-3px, -3px);
+}
+
+.update {
+    background: #1aa06d;
+    box-shadow: 3px 3px gray;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+}
+
+.update:hover {
+    transform: translate(3px, -3px);
+}
+
+.update a {
+    color: #fff;
+}
+
+.addHome {
+    padding: 0.8em 2em;
+    background-color: #000;
+    border: 3px solid #fff;
+    border-radius: 1em;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: -5px 5px 0px 0px #fff;
+}
+
+.addHome:hover {
+    transform: translate(5px, -5px);
+}
+
+#add-button {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#home-button {
+    border: 2px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    padding: 0.8rem;
+    text-decoration: none;
+}
+
+button {
+    border-radius: 8px;
+    border: 0;
+    padding: 0.8rem;
+    margin: 0.6rem;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* 4 Add post */
+.form {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #343541;
+
+}
