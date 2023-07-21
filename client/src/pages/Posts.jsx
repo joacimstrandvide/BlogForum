@@ -52,8 +52,8 @@ const Books = () => {
                             <img
                                 src="person-circle.svg"
                                 alt="User"
-                                width="17"
-                                height="17"
+                                width="18"
+                                height="18"
                             ></img>{' '}
                             {post.author}
                         </h4>
