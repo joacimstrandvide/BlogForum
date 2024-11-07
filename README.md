@@ -12,5 +12,6 @@ BlogForum is a website where users can post to a simple message board
 
 **Database** ElephantSQL
 
+<img src="screenshot.png" alt="Screenshot" title="Screenshot">
 
 
